@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Horas de estudo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantas horas por dia você estuda?"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp" />
+
+        <RadioGroup
+            android:id="@+id/rgHorasEstudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbMenosDe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menos de 1 hora" />
+
+            <RadioButton
+                android:id="@+id/rb1a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre 1 e 3 horas" />
+
+            <RadioButton
+                android:id="@+id/rb3a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre 3 e 5 horas" />
+
+            <RadioButton
+                android:id="@+id/rbMaisDe5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mais de 5 horas" />
+        </RadioGroup>
+
+        <!-- Distrações -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quais são suas principais distrações?"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cbCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celular" />
+
+        <CheckBox
+            android:id="@+id/cbRedes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redes sociais" />
+
+        <CheckBox
+            android:id="@+id/cbTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV / Streaming" />
+
+        <CheckBox
+            android:id="@+id/cbBarulho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barulho / ambiente" />
+
+        <!-- Nível de foco -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Como você avalia seu nível de foco?"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgNivelFoco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbFocoBaixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baixo" />
+
+            <RadioButton
+                android:id="@+id/rbFocoMedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/rbFocoAlto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alto" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>

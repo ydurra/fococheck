@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- "Card" central -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/bg_card"
+                android:elevation="4dp">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/txtTituloDados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seus hábitos de estudo"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <!-- Subtítulo -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preencha seus dados para começarmos a análise."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Campo: Nome -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textSize="14sp"
+                    android:textColor="#444444" />
+
+                <EditText
+                    android:id="@+id/edtNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite seu nome"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <!-- Campo: Período -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Período em que mais estuda"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="16dp" />
+
+                <Spinner
+                    android:id="@+id/spPeriodo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_input" />
+
+                <!-- Switch: Estuda todo dia -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Você estuda todos os dias?"
+                        android:textSize="14sp"
+                        android:textColaor="#444444" />
+
+                    <Switch
+                        android:id="@+id/swEstudaTodoDia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <!-- Botão Próxima -->
+                <Button
+                    android:id="@+id/btnProxima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Próxima"
+                    app:backgroundTint="@null"
+                    android:layout_marginTop="24dp"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
